@@ -8,6 +8,12 @@ const Theme = {
     DARK: 'dark-theme',
 };
 
+const defTheme = localStorage.getItem('my-theme');
+if (defTheme === null) {
+    localStorage.setItem('my-theme', Theme.LIGHT);
+};
+
+
 const myTheme = localStorage.getItem('my-theme');
 body.classList.add(`${myTheme}`);
 

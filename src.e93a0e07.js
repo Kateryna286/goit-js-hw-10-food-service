@@ -9,8 +9,8 @@ module.exports=[{id:"XWaQXcbk0",name:"Картофель, запеченный �
 },{}],"tW6H":[function(require,module,exports) {
 "use strict";var e=t(require("../templates/menu.hbs")),n=t(require("../menu.json"));function t(e){return e&&e.__esModule?e:{default:e}}const u=document.querySelector(".js-menu");console.log(u);const r=o(n.default);function o(n){return n.map(e.default).join("")}u.insertAdjacentHTML("beforeend",r);
 },{"../templates/menu.hbs":"dgbP","../menu.json":"mA8c"}],"XcIw":[function(require,module,exports) {
-const e=document.querySelector(".theme-switch__toggle"),t=document.querySelector("body");e.addEventListener("change",c);const m={LIGHT:"light-theme",DARK:"dark-theme"},a=localStorage.getItem("my-theme");function c(a){e.checked?(t.classList.remove("light-theme","dark-theme"),localStorage.setItem("my-theme",m.DARK),t.classList.add(`${localStorage.getItem("my-theme")}`)):(t.classList.remove("light-theme","dark-theme"),localStorage.setItem("my-theme",m.LIGHT),t.classList.toggle(`${localStorage.getItem("my-theme")}`))}t.classList.add(`${a}`),"dark-theme"===a&&(e.checked=!0);
+const e=document.querySelector(".theme-switch__toggle"),t=document.querySelector("body");e.addEventListener("change",o);const m={LIGHT:"light-theme",DARK:"dark-theme"},l=localStorage.getItem("my-theme");null===l&&localStorage.setItem("my-theme",m.LIGHT);const a=localStorage.getItem("my-theme");function o(l){e.checked?(t.classList.remove("light-theme","dark-theme"),localStorage.setItem("my-theme",m.DARK),t.classList.add(`${localStorage.getItem("my-theme")}`)):(t.classList.remove("light-theme","dark-theme"),localStorage.setItem("my-theme",m.LIGHT),t.classList.toggle(`${localStorage.getItem("my-theme")}`))}t.classList.add(`${a}`),"dark-theme"===a&&(e.checked=!0);
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./js/markup"),require("./js/themes");
 },{"./js/markup":"tW6H","./js/themes":"XcIw"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-10-food-service/src.c475e900.js.map
+//# sourceMappingURL=/goit-js-hw-10-food-service/src.e93a0e07.js.map

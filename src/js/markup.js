@@ -9,5 +9,5 @@ const menuCardsMarkup = createMenuCardsMarkup(products);
 menuContainer.insertAdjacentHTML('beforeend', menuCardsMarkup);
 
 function createMenuCardsMarkup(products) {
-    return products.map(menuCardTpl).join('');
+    return menuCardTpl(products);
   };
